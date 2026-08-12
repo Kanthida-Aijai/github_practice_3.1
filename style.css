@@ -120,3 +120,226 @@ nav a:hover {
   color: #777;
   margin-bottom: 50px;
 }
+
+/* Main Form Area */
+.application-form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 24px;
+  border: 1px solid #eee; /* เพิ่มขอบอ่อนๆ ตามดีไซน์ */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+  text-align: left; /* จัดเนื้อหาฟอร์มชิดซ้าย */
+}
+
+/* Fieldset and Legend */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+fieldset legend {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Resolve Conflict: ไอคอน SVG (ผ่าน FontAwesome) */
+fieldset legend i {
+  font-size: 24px;
+  color: #1f4aa8; /* สีไอคอนตามดีไซน์ */
+}
+
+/* Form Groups and Rows */
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row .form-group {
+  margin-bottom: 0; /* reset margin ใน row */
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #1f4aa8;
+  box-shadow: 0 0 0 3px rgba(31, 74, 168, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Short Input for Year */
+.short-input {
+  max-width: 250px;
+}
+
+/* Radio and Checkbox Groups */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  margin-top: 10px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btn-submit {
+  background-color: #28a745; /* สีเขียวตามดีไซน์ */
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 50px auto 0 auto; /* จัดกึ่งกลาง */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #1f4aa8; /* สีน้ำเงินเข้มตามดีไซน์ */
+  color: white;
+  padding: 60px 50px 20px 50px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0 0 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info p i {
+  color: #a0c4ff; /* สีไอคอนอ่อนๆ */
+}
+
+.brand-info .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.brand-info p {
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #a0c4ff;
+  margin: 0;
+}
