@@ -41,7 +41,6 @@ body {
   color: #334155;
 }
 
-/* ไอคอน */
 .icon-box {
   width: 36px;
   height: 36px;
@@ -61,7 +60,6 @@ body {
   color: #059669;
 }
 
-/* Grid จัดเลย์เอาต์ฟอร์ม */
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -88,7 +86,6 @@ label {
   color: #ef4444;
 }
 
-/* อินพุตสไตล์ */
 input, textarea, select {
   width: 100%;
   padding: 10px 14px;
@@ -113,7 +110,6 @@ textarea {
   resize: vertical;
 }
 
-/* จัดสไตล์ Select dropdown */
 .select-wrapper {
   position: relative;
 }
@@ -135,7 +131,6 @@ select {
   pointer-events: none;
 }
 
-/* Responsive สำหรับหน้าจอขนาดเล็ก */
 @media (max-width: 500px) {
   .form-grid {
     grid-template-columns: 1fr;
