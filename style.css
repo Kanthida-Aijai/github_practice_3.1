@@ -1,54 +1,122 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* ปรับ font ให้ดูทันสมัยขึ้น */
+  background-color: #f8f9fa; /* สีพื้นหลังอ่อนๆ ตามดีไซน์ */
+  color: #333;
+  line-height: 1.6;
 }
 
-nav, .hero, .application-form, footer {
-  padding: 20px;
-}
-
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background-color: white;
+  padding: 15px 50px; /* เพิ่ม padding ด้านข้าง */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* เพิ่ม shadow อ่อนๆ */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f4aa8; /* สีน้ำเงินของแบรนด์ */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px; /* เพิ่ม gap */
   padding: 0;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #222;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #1f4aa8;
+}
+
+.btn-login {
+  background-color: #1f4aa8;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #163a8c;
+}
+
+/* Hero Section */
 .hero {
+  background-color: white;
+  padding: 80px 50px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
-.hero img {
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #222;
+}
+
+.hero-text h1 span {
+  color: #1f4aa8; /* Resolve Conflict: เน้นสีน้ำเงินตามดีไซน์ */
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.hero-image img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
+  max-width: 550px;
+  border-radius: 20px; /* ขอบมนมากขึ้นตามดีไซน์ */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.application-form {
-  background: white;
-  max-width: 1000px;
-  margin: 0 auto;
-  border-radius: 16px;
+/* Application Form Container */
+.application-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center; /* จัดหัวข้อให้อยู่ตรงกลาง */
 }
 
-footer {
-  background: #1f4aa8;
-  color: white;
+.application-container h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.application-container > p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 50px;
 }
