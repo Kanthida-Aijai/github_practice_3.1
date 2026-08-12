@@ -105,6 +105,77 @@
               <input type="text" id="grad-year" name="grad-year" placeholder="พ.ศ. 2566" required />
             </div>
           </fieldset>
+          <!-- ประวัติการทำงาน -->
+          <fieldset>
+            <legend>
+              <i class="fas fa-briefcase"></i> ประวัติการทำงาน
+            </legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="last-company">บริษัทล่าสุดที่ทำงาน</label>
+                <input type="text" id="last-company" name="last-company" placeholder="ชื่อบริษัท" />
+              </div>
+              <div class="form-group">
+                <label for="last-position">ตำแหน่งงาน</label>
+                <input type="text" id="last-position" name="last-position" placeholder="ตำแหน่งงานล่าสุด" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience">ประสบการณ์การทำงาน</label>
+              <textarea id="experience" name="experience" placeholder="อธิบายเกี่ยวกับประสบการณ์การทำงานของคุณ"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- ประเภทการจ้างงาน -->
+          <fieldset>
+            <legend>ประเภทการจ้างงานที่ต้องการ *</legend>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="job-type" value="full-time" required />
+                พนักงานประจำ
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="job-type" value="part-time" />
+                พนักงานชั่วคราว
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="job-type" value="freelance" />
+                ฟรีแลนซ์
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="job-type" value="internship" />
+                นักศึกษาฝึกงาน
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- ทักษะ -->
+          <fieldset>
+            <legend>ทักษะที่มี (เลือกได้หลายข้อ)</legend>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="office" />
+                Microsoft Office
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="english" />
+                การสื่อสารภาษาอังกฤษ
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="teamwork" />
+                การทำงานเป็นทีม
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="skills" value="problem-solving" />
+                การแก้ปัญหา
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> ส่งใบสมัคร
+          </button>
+        </form>
       </section>
     </main>
     <!-- Footer -->
